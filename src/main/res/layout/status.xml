@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/recy"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sta"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/pro2"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="my status"
+        android:layout_toRightOf="@id/sta"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 minutes ago"
+        android:layout_below="@id/my"
+        android:layout_toRightOf="@id/sta"/>
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/op"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent updates"
+        android:layout_below="@id/sta"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recesta"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/pro3"
+        android:layout_below="@id/recent"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/sidharth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sidharth"
+        android:layout_toRightOf="@id/recesta"
+        android:layout_below="@id/recent"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today 8:10 am"
+        android:layout_below="@id/sidharth"
+        android:layout_toRightOf="@id/recesta"/>
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viewed updates"
+        android:layout_below="@id/today"
+        android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/recy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+   >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/status"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/pro4"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/statusname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mit"
+        android:layout_toRightOf="@id/status"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today 1:48am"
+        android:layout_below="@id/statusname"
+        android:layout_toRightOf="@id/status"/>
+
+
+</RelativeLayout>
+
+</RelativeLayout>
